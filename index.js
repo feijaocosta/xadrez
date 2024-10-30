@@ -56,7 +56,6 @@ class Peca {
     }
 }
 
-
 class Peao extends Peca {
     constructor(cor, linha, coluna) {
         super(cor, linha,coluna);
@@ -64,9 +63,61 @@ class Peao extends Peca {
     }
 }
 
+class Torre extends Peca {
+    constructor(cor, linha, coluna) {
+        super(cor, linha,coluna);
+        this.simbolo = cor === 'branca' ? '&#9814;' : '&#9820;';
+    }
+}
+
+class Cavalo extends Peca {
+    constructor(cor, linha, coluna) {
+        super(cor, linha,coluna);
+        this.simbolo = cor === 'branca' ? '&#9816;' : '&#9822;';
+    }
+}
+
+class Bispo extends Peca {
+    constructor(cor, linha, coluna) {
+        super(cor, linha,coluna);
+        this.simbolo = cor === 'branca' ? '&#9815;' : '&#9821;';
+    }
+}
+
+class Rei extends Peca {
+    constructor(cor, linha, coluna) {
+        super(cor, linha,coluna);
+        this.simbolo = cor === 'branca' ? '&#9812;' : '&#9818;';
+    }
+}
+
+class Rainha extends Peca {
+    constructor(cor, linha, coluna) {
+        super(cor, linha,coluna);
+        this.simbolo = cor === 'branca' ? '&#9813;' : '&#9819;';
+    }
+}
+
 const tabuleiro = new Tabuleiro();
 
-peao = new Peao('branca', 1, 1);
+//Peças Brancas
+peao0 = new Peao('branca', 1, 0);
+peao1 = new Peao('branca', 1, 1);
+peao2 = new Peao('branca', 1, 2);
+peao3 = new Peao('branca', 1, 3);
+peao4 = new Peao('branca', 1, 4);
+peao5 = new Peao('branca', 1, 5);
+peao6 = new Peao('branca', 1, 6);
+peao7 = new Peao('branca', 1, 7);
+
+torre0 = new Torre('branca', 0, 0);
+torre1 = new Torre('branca', 0, 7);
+cavalo0 = new Cavalo('branca',0,1);
+cavalo1 = new Cavalo('branca',0,6);
+bispo0 = new Bispo('branca',0,2);
+bispo1 = new Bispo('branca',0,5);
+rainha = new Rainha('branca',0,3);
+rei = new Rei('branca',0,4);
 
 tabuleiro.colocarPeca(peao,1,1);
 
