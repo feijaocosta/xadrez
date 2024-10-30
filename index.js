@@ -119,6 +119,13 @@ bispo1 = new Bispo('branca',0,5);
 rainha = new Rainha('branca',0,3);
 rei = new Rei('branca',0,4);
 
-tabuleiro.colocarPeca(peao,1,1);
+tabuleiro.colocarPeca(peao0,1,0)
+tabuleiro.colocarPeca(peao1,1,1)
+tabuleiro.colocarPeca(peao2,1,2)
+tabuleiro.colocarPeca(peao3,1,3)
+tabuleiro.colocarPeca(peao4,1,4)
+tabuleiro.colocarPeca(peao5,1,5)
+tabuleiro.colocarPeca(peao6,1,6)
+tabuleiro.colocarPeca(peao7,1,7)
 
 alert(tabuleiro.nome);
