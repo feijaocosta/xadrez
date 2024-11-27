@@ -17,6 +17,10 @@ class Tabuleiro {
         casa.peca = peca;
         casa.elementoHtml.innerHTML = peca.simbolo;
     }
+
+    clicarCasa(casa) {
+        console.log(casa);
+    }
 }
 
 class Casa {
@@ -34,6 +38,10 @@ class Casa {
             this.elementoHtml.classList.add('escura');
         }
         document.getElementById('tabuleiro').appendChild(this.elementoHtml);
+
+        this.elementoHtml.addEventListener('click', () => {
+            tabuleiro.clicarCasa(this);
+        })
     }
 }
 
